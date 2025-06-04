@@ -1,0 +1,178 @@
+.dashboardContainer {
+  padding: 2rem;
+  min-height: 100vh;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.lightTheme {
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.darkTheme {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome {
+  font-size: 2rem;
+}
+
+.editButton {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.editButton:hover {
+  background-color: #0056b3;
+}
+
+.cardsSection {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 150px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.cardNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.userInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.chartSection h2 {
+  margin-bottom: 1rem;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 150px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* Container text colors */
+.lightTheme {
+  background-color: #f5f7fa;
+  color: #333; /* dark text on light background */
+}
+
+.darkTheme {
+  background-color: #121212;
+  color: #f5f5f5; /* light text on dark background */
+}
+
+/* Card styling */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  flex: 1;
+  min-width: 150px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, opacity 0.5s ease;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+  color: #222; /* Dark text inside white cards */
+}
+
+/* For card hover */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* Numbers inside cards - highlight color */
+.cardNumber {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* User info section */
+.userInfo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+  /* Add background and text colors per theme */
+}
+
+/* To fix text color inside userInfo for darkTheme,
+   we add a separate rule that applies only when parent has darkTheme */
+.darkTheme .userInfo p {
+  color:  #007bff; /* lighter text for readability */
+}
+
+.lightTheme .userInfo p {
+  color: #333; /* default dark text for light theme */
+}
+
+/* Header welcome text */
+.header .welcome {
+  /* Make sure text color changes with theme */
+  color: inherit; /* inherit from container */
+}
+
+/* Edit button */
+.editButton {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.editButton:hover {
+  background-color: #0056b3;
+}
+
+/* Chart title */
+.chartSection h2 {
+  margin-bottom: 1rem;
+  color: inherit; /* inherit from container */
+}
