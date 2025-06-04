@@ -14,7 +14,7 @@ A modern, responsive dashboard built with React. Features include theme switchin
 
 1. **Clone the Repository**
 
-   git clone https://github.com/yourusername/dashboard-app.git
+   git clone https://github.com/Ravula9819/E-Tailed-Internship.git
    cd dashboard-app
 
 2. **Install Dependencies**
@@ -47,7 +47,7 @@ A modern, responsive dashboard built with React. Features include theme switchin
 - **Role:** Front-End Developer Intern  
 - **Email:** ravulanamratha98@gmail.com  
 - **LinkedIn:** [linkedin.com/in/namratha-ravula](https://www.linkedin.com/in/namratha-ravula/)
-  - **GitHub:** [github.com/yourusername](https://github.com/Ravula9819/)
+- **GitHub:** [github.com/Ravula9819](https://github.com/Ravula9819/)
 
 
 ## 📜 License
